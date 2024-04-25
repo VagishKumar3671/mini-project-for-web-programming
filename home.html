@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <h2 class="vklog">VK café</h2>
+            <nav class="navigation">
+                <button class="btnLogin-popup">Home</button>
+                <a href="G:/My Drive/programming language/HTML/VAGISH MINI PROJECT/about/about.html">About</a>
+                <a href="G:/My Drive/programming language/HTML/VAGISH MINI PROJECT/menu 1/menu.html">Shop</a>
+                <a href="G:/My Drive/programming language/HTML/VAGISH MINI PROJECT/Contact.html">Contact</a>
+                <a href="G:/My Drive/programming language/HTML/VAGISH MINI PROJECT/sign.html">Login</a>
+            </nav>
+        </header>
+        <br>
+        <div class="content1">
+            <div class="textBox">
+                <h2>It's not Coffee<br>It's <span>VK Café</span></h2>
+                <p>Coffee is the dawn's elixir, a warm embrace in a cup, and a fragrant symphony that orchestrates the senses.
+                <br>more than just a beverage; it's a mood, an emotion that pulses through the veins like a gentle caffeinated heartbeat.</p>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="coffee">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')";></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')""></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')""></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector(".coffee").src = anything;
+        }
+        function changeCircleColor(color){
+            const circle=document.querySelector(".circle");
+            circle.style.background = color;
+        }
+    </script>    
+</body>
+</html>
