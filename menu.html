@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Coffee Shop Menu</h1>
+  <div class="menu-container">
+    <div class="category">
+      <h2>Espresso Drinks</h2>
+      <div class="coffee-item">
+        <img src="Espresso.jpeg" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>Rich and strong coffee shot.</p>
+        <div class="size-selection">
+          <label for="espresso-size">Size:</label>
+          <select id="espresso-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="quantity">
+          <button class="minus" data-coffee="espresso">-</button>
+          <span id="espresso-quantity">1</span>
+          <button class="plus" data-coffee="espresso">+</button>
+        </div>
+        <button class="add-to-cart" data-coffee="espresso">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="category">
+      <h2>Milk-based Drinks</h2>
+      <div class="coffee-item">
+        <img src="Latte.jpeg" alt="Latte">
+        <h3>Latte</h3>
+        <p>Espresso with steamed milk and a layer of froth.</p>
+        <div class="size-selection">
+          <label for="latte-size">Size:</label>
+          <select id="latte-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="quantity">
+          <button class="minus" data-coffee="latte">-</button>
+          <span id="latte-quantity">1</span>
+          <button class="plus" data-coffee="latte">+</button>
+        </div>
+        <button class="add-to-cart" data-coffee="latte">Add to Cart</button>
+      </div>
+
+      <div class="coffee-item">
+        <img src="Mocha.jpeg" alt="Mocha">
+        <h3>Mocha</h3>
+        <p>Espresso with steamed milk, chocolate, and topped with whipped cream.</p>
+        <div class="size-selection">
+          <label for="mocha-size">Size:</label>
+          <select id="mocha-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="quantity">
+          <button class="minus" data-coffee="mocha">-</button>
+          <span id="mocha-quantity">1</span>
+          <button class="plus" data-coffee="mocha">+</button>
+        </div>
+        <button class="add-to-cart" data-coffee="mocha">Add to Cart</button>
+      </div>
+
+      <div class="coffee-item">
+        <img src="Flat White.jpeg" alt="Flat White">
+        <h3>Flat White</h3>
+        <p>Espresso with velvety steamed milk, similar to a latte but with a higher coffee to milk ratio.</p>
+        <div class="size-selection">
+          <label for="flat-white-size">Size:</label>
+          <select id="flat-white-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="quantity">
+          <button class="minus" data-coffee="flat-white">-</button>
+          <span id="flat-white-quantity">1</span>
+          <button class="plus" data-coffee="flat-white">+</button>
+        </div>
+        <button class="add-to-cart" data-coffee="flat-white">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Black Coffee</h2>
+      <div class="coffee-item">
+        <img src="Americano.jpeg" alt="Americano">
+        <h3>Americano</h3>
+        <p>Espresso with hot water, creating a bold and rich coffee with a lighter body than drip coffee.</p>
+        <div class="size-selection">
+          <label for="americano-size">Size:</label>
+          <select id="americano-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="quantity">
+          <button class="minus" data-coffee="americano">-</button>
+          <span id="americano-quantity">1</span>
+          <button class="plus" data-coffee="americano">+</button>
+        </div>
+        <button class="add-to-cart" data-coffee="americano">Add to Cart</button>
+      </div>
+
+      <div class="coffee-item">
+        <img src="Black Coffee.jpeg" alt="Black Coffee">
+        <h3>Black Coffee</h3>
+        <p>Strong and bold coffee without any milk or sugar added.</p>
+        <div class="size-selection">
+          <label for="black-coffee-size">Size:</label>
+          <select id="black-coffee-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="quantity">
+          <button class="minus" data-coffee="black-coffee">-</button>
+          <span id="black-coffee-quantity">1</span>
+          <button class="plus" data-coffee="black-coffee">+</button>
+        </div>
+        <button class="add-to-cart" data-coffee="black-coffee">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
