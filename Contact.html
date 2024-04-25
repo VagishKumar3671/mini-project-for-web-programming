@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+    .contact-form {
+        background: #fff;
+        padding: 20px;
+        margin: 20px 0;
+      }
+      .contact-form h2 {
+        margin-top: 0;
+      }
+      .contact-form label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+      .contact-form input[type="text"],
+      .contact-form input[type="email"],
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+      }
+    </style>
+    <link rel="stylesheet" href="sign_style.css">
+</head>
+<body>
+    <header>
+        <h2 class="vklog">VK café</h2>
+        <nav class="navigation">
+            <a href="home/home.html">Home</a>
+            <a href="about/about.html">About</a>
+            <a href="menu 1/menu.html">Shop</a>
+            <button class="btnLogin-popup">Contact</button>
+            <a href="sign.html">Login</a>
+        </nav>
+    </header>
+<div class="container">
+  <section class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</div>
+</body>
+</html>
